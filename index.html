@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <title>BusquedaPersonas</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-logo">
+                <figure>
+                    <img src="img/gesinco-logo-blanco.png" alt="Logo Gesinco">
+                </figure>
+            </div>
+        </header>
+        <div class="main-container">
+            <h2>Search</h2>
+            <div class="row-search">
+                <div class="wrapper">
+                    <div class="search-input">
+                        <a href="" target="_blank" hidden></a>
+                        <input type="text" placeholder="Type to search..." id="parameter">
+                        <div class="autocom-box">
+                        <!-- here list are inserted from javascript -->
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <ul>
+                        <li><input class="search-buttons" type="button" name="dni" value="Documento" onclick="limpiar_busqueda('dni')"></input></li>
+                        <li><input class="search-buttons" type="button" name="name" value="Nombre" onclick="limpiar_busqueda('name')"></input></li>
+                        <li><input class="search-buttons" type="button" name="telephon" value="Teléfono" onclick="limpiar_busqueda('telephon')"></input></li>
+                    </ul>
+                </div>
+            </div>  
+
+            <div class="row-cards" id="row-cards" >
+
+            </div>
+    
+        </div>
+        
+
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+
+
+
+<footer id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" id="col-footer">
+                <div id="logog5">
+                    <!-- <a href="https://gesinco.com.ar/" class="logo-gesinco" ><img src="img/gesinco-logo-blanco.png" width="100" hight="100" alt loading="lazy"></a> -->
+                </div>
+                <div id="empresa">
+                    <a href="https://gesinco.com.ar/" class="gesinco" target="_blank"  ><small>Gestión Integral de Cobranzas SA</small></a>
+                    <p><small>&copy;  2022 - Front by Victoria Figini</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
